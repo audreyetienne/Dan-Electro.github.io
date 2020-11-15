@@ -63,7 +63,7 @@ const fillNewsContent = (obj)=>{
         dateNewsArray[0].innerHTML = obj[0].date;
         imageNewsArray[0].innerHTML = `<img src="./assets/${obj[0].image}" width = "100%" />`
         newsDescriptionArray[0].innerHTML = obj[0].description;
-        newsLinkArray[0].innerHTML = `<a href="${obj[0].link}">${obj[0].read}</a>`
+        newsLinkArray[0].innerHTML = `<a href="${obj[0].link} target = '_blank'">${obj[0].read}</a>`
         
     //}
 }
@@ -77,11 +77,3 @@ toggleButton.addEventListener("click", ()=>{
     (newsContentFr) ? newsTitre.textContent = newsContentTitre.fr : newsTitre.textContent = newsContentTitre.en;
     (newsContentFr) ? fillNewsContent (newsContentText.fr) : fillNewsContent (newsContentText.en)
 })
-
-
-// {/* <div id="news" class="main-content hidden">
-//       <main>    
-//         <h3 class="titre"></h3>
-//         <div class="news-content"></div>
-//       </main>
-//     </div> */}
