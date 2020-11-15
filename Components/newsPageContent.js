@@ -63,7 +63,7 @@ const fillNewsContent = (obj)=>{
         dateNewsArray[0].innerHTML = obj[0].date;
         imageNewsArray[0].innerHTML = `<img src="./assets/${obj[0].image}" width = "100%" />`
         newsDescriptionArray[0].innerHTML = obj[0].description;
-        newsLinkArray[0].innerHTML = `<a href="${obj[0].link} target = '_blank'">${obj[0].read}</a>`
+        newsLinkArray[0].innerHTML = `<a href="${obj[0].link}" target = "_blank">${obj[0].read}</a>`
         
     //}
 }
