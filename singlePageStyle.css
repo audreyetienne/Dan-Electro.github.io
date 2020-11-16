@@ -454,13 +454,6 @@ div h5{
     padding-bottom: 5px;
     width: 90%;
 }
-.work-container{
-    display: flex;
-    flex-wrap: nowrap;
-    width : 100%;
-    height : 100%;
-    transition : all 500ms;
-}
 
 .work-date{
     font-family: 'Josefin Sans', sans-serif;
@@ -530,9 +523,6 @@ div h5{
     padding-right : 5px ;
     border-bottom : 3px solid black;
     transition : max-height 0.5s;
-}
-.appear{
-    opacity: 1;
 }
 .chosen{
     background-color: grey;
@@ -608,7 +598,6 @@ div h5{
     transition: all 350ms;
     transform: scale(1.2) translateY(0px);
 }
-
 
 
 /*Footer*/
