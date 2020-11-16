@@ -47,6 +47,7 @@ for(let i=0 ; i<abstractBtn.length ; i++){
             abstractBtn[i].innerHTML = "Hide abstract &#x25b2;";
             abstractBtn[i].classList.add("chosen");
             textDisplays[i].style.maxHeight = textDisplays[i].scrollHeight + 'px';
+            
         } else {           
             abstractBtn[i].innerHTML = "Show abstract &#x25bc;";
             abstractBtn[i].classList.remove("chosen");

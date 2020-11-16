@@ -25,6 +25,8 @@ toggleButton.addEventListener("click", ()=>{
 for (let i=0 ; i<nav.length ; i++){
     nav[i].addEventListener("click", (event)=>{
         choixMenuItemActive(event);
+        window.scrollTo(0, 0);
+        console.log(window.innerHeight)
     })
 };
 
