@@ -6,8 +6,8 @@ titreHeader = {
         fr : "Audrey Etienne, Ph.D"
     },    
     home :{
-        en : "Post-doctoral Researcher in economics",
-        fr : "Chercheure post-doctorante en économie" 
+        en : "Post-doctoral Researcher",
+        fr : "Chercheure post-doctorante" 
     },
     parcours : {
         en : "Career path",
