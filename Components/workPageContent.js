@@ -1,8 +1,8 @@
 const workTitre = document.querySelector("#work .titre");
 
 workContentTitre = {
-    en : ["Research and working papers"],
-    fr : ["Travaux de recherche<br/><small style='font-size:0.5em'>(Version française non disponible)</small>"]
+    en : ["Research articles"],
+    fr : ["Articles de recherche<br/><small style='font-size:0.5em'>(Version française non disponible)</small>"]
 }
 
 workContentText = {

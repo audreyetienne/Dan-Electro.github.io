@@ -2,7 +2,7 @@ const nav = document.querySelectorAll('nav ul li');
 
 menuItems= {
     en : ["Home", "Career", "Research", "News", "Contact"],
-    fr : ["Accueil", "Parcours", "Travaux", "Actualités", "Contact"]
+    fr : ["Accueil", "Parcours", "Recherche", "Actualités", "Contact"]
   }
 
 

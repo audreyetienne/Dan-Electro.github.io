@@ -1,12 +1,3 @@
-let htmlElements =[document.querySelector("#cv-titre small")]
-for(let i=1 ; i<=13 ; i++){
-    htmlElements.push(document.querySelector(`#annee-${i}`));
-    htmlElements.push(document.querySelector(`#desc-${i}`))
-}
-htmlElements.push(document.querySelector(`#parcours small`));
-htmlElements.push(document.querySelector(`#cv-conteneur h5`))
-
-
 careerTitre = {
     en : "Career",
     fr: "Parcours"
@@ -31,9 +22,9 @@ for(let i=0 ; i<miniNavBarItems.length ; i++){
 const colonneDescription = document.querySelectorAll(".description")
 
 const tableTextDescription = {
-    en : ["<b>OFCE-Sciences Po</b>, Post-doctoral Researcher.","<b>Université Paris-Est Créteil (UPEC)</b>, Teaching and Research Assistant in Economics (ATER), Créteil.","<b>University of Tours</b>, Teaching and Research Assistant in Economics (ATER), Tours","<b>Aix-Marseille School of Economics (AMSE)</b>, Teaching and Research Assistant (ATER), Marseille.","<b>Aix-Marseille School of Economics (AMSE)</b>, PhD Candidate, Marseille. <br/><b>Advisor</b> : Olivier Bargain<br/> <b>Title</b> : <em>Three Essays on Workers’ Self-Selection</em><br/><b>Completion</b> : December 2018<br/><b>Research Interests</b> : <em>labour economics, applied microeconomics, industrial economics, public economics</em>","<b>Université Paris-Est Créteil (UPEC)</b>, Teaching and Research Assistant in Economics (ATER).<br/><b>Subjects & classes</b> : <em>Statistics</em> (BA 1st year), <em>Finance</em> (BA 2nd year), <em>Time Series</em> (Master 1st year).", "<b>University of Tours</b>, Teaching and Research Assistant in Economics (ATER)<br/><b>Subjects & classes</b> : <em>Macroeconomics</em> (BA 1st year, 2nd year and 3rd year).","<b>Aix-Marseille School of Economics (AMSE)</b>, Teaching and Research Assistant (ATER)<br/><b>Subjects & classes</b> : Microeconomics (BA 1st year), Econometrics (Master 1st year).", "<b>Fully qualified teacher in Economics and Social Sciences</b> (secondary school level), <em>on leave</em>.", "<b>Lycée Freyssinet</b>, Intern Teacher in Economics and Social Sciences, Saint-Brieuc.", "<b>Secondary Education Teaching Certificate in Economics and Social Sciences</b> (CAPES de SES).", "<b>Paris School of Economics</b>, <em>Master’s degree in Public Policy and Development</em>, Paris.","<b>ESCP Europe</b>, <em>Master’s and Bachelor’s degrees in Management</em>, Paris.", "<b>Lycée Saint-Louis</b>, <em>Preparatory Class for Business School</em>, Paris.", "<b>Lycée Louis le Grand</b>, <em>Preparatory Class for Engineering School</em>, Paris.", "<b>French Ministry of Ecology</b>, intern.<br/><b>Research subject</b> : <em>A single-institution study of urban policies' impact</em>, Paris.", "Thousand Suns, Marketing Executive Intern, London.", "<b>Décogalerie</b>, Online Marketing intern, Paris."],
+    en : ["<b>OFCE-Sciences Po</b>, Post-doctoral Researcher.","<b>Université Paris-Est Créteil (UPEC)</b>, Teaching and Research Assistant in Economics (ATER), Créteil.","<b>University of Tours</b>, Teaching and Research Assistant in Economics (ATER), Tours","<b>Aix-Marseille School of Economics (AMSE)</b>, Teaching and Research Assistant (ATER), Marseille.","<b>Aix-Marseille School of Economics (AMSE)</b>, PhD Candidate, Marseille. <br/><b>Advisor</b> : Olivier Bargain<br/> <b>Title</b> : <em>Three Essays on Workers’ Self-Selection</em><br/><b>Completion</b> : December 2018<br/><b>Research Interests</b> : <em>labour economics, applied microeconomics, industrial economics, public economics</em>","<b>Université Paris-Est Créteil (UPEC)</b>, Teaching and Research Assistant in Economics (ATER).<br/><b>Subjects & classes</b> : <em>Statistics</em> (BA 1st year), <em>Finance</em> (BA 2nd year), <em>Time Series</em> (Master 1st year).", "<b>University of Tours</b>, Teaching and Research Assistant in Economics (ATER)<br/><b>Subjects & classes</b> : <em>Macroeconomics</em> (BA 1st year, 2nd year and 3rd year).","<b>Aix-Marseille School of Economics (AMSE)</b>, Teaching and Research Assistant (ATER)<br/><b>Subjects & classes</b> : Microeconomics (BA 1st year), Econometrics (Master 1st year).", "<b>Fully qualified teacher in Economics and Social Sciences</b> (secondary school level), <em>on leave</em>.", "<b>Lycée Freyssinet</b>, Intern Teacher in Economics and Social Sciences, Saint-Brieuc.", "<b>Secondary Education Teaching Certificate in Economics and Social Sciences</b> (CAPES de SES).", "<b>Paris School of Economics</b>, <em>Master’s degree in Public Policy and Development</em>, Paris.","<b>ESCP Europe</b>, <em>Master’s and Bachelor’s degrees in Management</em>, Paris."],
 
-    fr : ["<b>OFCE-Sciences Po</b>, Chercheuse post-doctorante.","<b>Université Paris-Est Créteil (UPEC)</b>, ATER en Sciences économiques, Créteil.","<b>Université de Tours</b>, ATER en Sciences économiques (ATER), Tours","<b>Aix-Marseille School of Economics (AMSE)</b>, ATER, Marseille.", "<b>Aix-Marseille School of Economics (AMSE)</b>, Doctorat en économie, Marseille. <br/><b>Directeur de thèse</b> : Olivier Bargain<br/> <b>Titre</b> : <em>Trois études sur l'auto-sélection des salariés</em><br/><b>Completion</b> : Décembre 2018<br/><b>Intérêts de recherche</b> : <em>économie du travail, microéconomie appliquée, économie industrielle, économie du secteur public</em>","<b>Université Paris-Est Créteil (UPEC)</b>, ATER.<br/><b>Matières enseignées</b> : <em>Statistiques</em> (Licence 1), <em>Finance</em> (Licence 2), <em>Séries temporelles</em> (Master 1).", "<b>Université de Tours</b>, ATER<br/><b>Matières enseignées</b> : <em>Macroeconomie</em> (Licence 1, 2 et 3).", "<b>Aix-Marseille School of Economics (AMSE)</b>, ATER<br/><b>Matières enseignées</b> : Microéconomie (Licence 1), Econométrie (Master 1).","<b>Professeure certifiée en Sciences économiques et sociales</b>, <em>actuellement en disponibilité</em>.", "<b>Lycée Freyssinet</b>, Professeure stagiaire en Sciences économiques et sociales, Saint-Brieuc.", "Obtention du <b>CAPES en Sciences économiques et sociales</b>.", "<b>Paris School of Economics</b>, <em>Master en Politique publique et Développement</em>, Paris.","<b>ESCP Europe</b>, <em>Licence en Management</em>, Paris.","<b>Lycée Saint-Louis</b>, <em>Classes préparatoires en école de commerce</em>, Paris.", "<b>Lycée Louis le Grand</b>, <em>Classes préparatoires en école d'ingénieur</em>, Paris.", "<b>Ministère du Développement Durable</b>, stagiaire.<br/><b>Sujet de recherche</b> : <em>Analyse de l’impact de différentes politiques urbaines à l’aide d’un modèle monocentrique</em>, Paris.", "<b>Thousand Suns</b>, stage au département Marketing, Londres.", "<b>Décogalerie</b>, stagiaire Marketing Online, Paris."]
+    fr : ["<b>OFCE-Sciences Po</b>, Chercheure post-doctorante.","<b>Université Paris-Est Créteil (UPEC)</b>, ATER en Sciences économiques, Créteil.","<b>Université de Tours</b>, ATER en Sciences économiques (ATER), Tours","<b>Aix-Marseille School of Economics (AMSE)</b>, ATER, Marseille.", "<b>Aix-Marseille School of Economics (AMSE)</b>, Doctorat en économie, Marseille. <br/><b>Directeur de thèse</b> : Olivier Bargain<br/> <b>Titre</b> : <em>Trois essais sur l'auto-sélection des salariés</em><br/><b>Date de soutenance</b> : Décembre 2018<br/><b>Intérêts de recherche</b> : <em>économie du travail, microéconomie appliquée, économie industrielle, économie du secteur public</em>","<b>Université Paris-Est Créteil (UPEC)</b>, ATER.<br/><b>Matières enseignées</b> : <em>Statistiques</em> (Licence 1), <em>Finance</em> (Licence 2), <em>Séries temporelles</em> (Master 1).", "<b>Université de Tours</b>, ATER<br/><b>Matières enseignées</b> : <em>Macroéconomie</em> (Licence 1, 2 et 3).", "<b>Aix-Marseille School of Economics (AMSE)</b>, ATER<br/><b>Matières enseignées</b> : Microéconomie (Licence 1), Econométrie (Master 1).","<b>Professeure certifiée en Sciences économiques et sociales</b>, <em>actuellement en disponibilité</em>.", "<b>Lycée Freyssinet</b>, Professeure stagiaire en Sciences économiques et sociales, Saint-Brieuc.", "Obtention du <b>CAPES en Sciences économiques et sociales</b>.", "<b>Paris School of Economics</b>, <em>Master en Politique publique et Développement</em>, Paris.","<b>ESCP Europe</b>, <em>Licence et Master en Management</em>, Paris."]
 }
 
 
@@ -149,7 +140,6 @@ navItems[1].addEventListener("click", ()=>{
                     document.querySelector("#annee-2020").offsetTop,
                     document.querySelector("#annee-2019").offsetTop,
                     document.querySelector("#annee-2018").offsetTop,
-                    document.querySelector("#annee-2013").offsetTop,
                 ]
                 let YParcoursConteneur = document.querySelector("#career").offsetTop;
                 window.scrollTo(0,YParcoursConteneur+listeAnnees[i])
@@ -178,7 +168,6 @@ navItems[1].addEventListener("click", ()=>{
                 document.querySelector("#annee-2020").offsetTop,
                 document.querySelector("#annee-2019").offsetTop,
                 document.querySelector("#annee-2018").offsetTop,
-                document.querySelector("#annee-2013").offsetTop,
             ]
 
             let YParcoursConteneur = document.querySelector("#career").offsetTop;
@@ -191,30 +180,22 @@ navItems[1].addEventListener("click", ()=>{
                 liMiniNavBar[2].classList.remove("selected");
                 liMiniNavBar[1].classList.add("selected");
                 liMiniNavBar[0].classList.remove("selected");               
-            } else if(window.scrollY >= (YParcoursConteneur+listeAnnees[2]) && window.scrollY < (YParcoursConteneur+listeAnnees[3])){
-                liMiniNavBar[3].classList.remove("selected");
+            } else if(window.scrollY >= (YParcoursConteneur+listeAnnees[2]) && window.scrollY < (CVConteneur.offsetTop)){
                 liMiniNavBar[2].classList.add("selected"); 
                 liMiniNavBar[1].classList.remove("selected");    
-            } else if(window.scrollY >= (YParcoursConteneur+listeAnnees[3]) && window.scrollY < (CVConteneur.offsetTop)){
-                liMiniNavBar[3].classList.add("selected"); 
-                liMiniNavBar[2].classList.remove("selected");    
             }
         })
     }
 })
         
-        window.addEventListener("scroll", ()=>{
-            if (window.scrollY>300){
-                miniNavBar.style.top = -180 +"px";
-                console.log(miniNavBar.style.top)
-            } else {
-                miniNavBar.style.top = (190-window.scrollY)+"px";
-            }
-        })
-//     }
-// //}
-// )
-
+    window.addEventListener("scroll", ()=>{
+        if (window.scrollY>300){
+            miniNavBar.style.top = -180 +"px";
+        } else {
+            miniNavBar.style.top = (190-window.scrollY)+"px";
+        }
+    })
+    
 
 
     

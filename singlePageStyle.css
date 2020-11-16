@@ -97,6 +97,7 @@ h2{
 nav{
     top: 0;
     position: sticky;
+    position : -webkit-sticky;
     display: flex;
     background-color: var(--main-color);    
     justify-content: space-around;

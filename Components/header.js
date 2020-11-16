@@ -3,11 +3,11 @@ const headerContent =document.querySelector(".header-content");
 titreHeader = {
     titre : {
         en : "Audrey Etienne, Ph.D",
-        fr : "Audrey Etienne"
+        fr : "Audrey Etienne, Ph.D"
     },    
     home :{
-        en : "Economics - Applied microeconomics",
-        fr : "Docteure en économie - Microéconomie appliquée" 
+        en : "Post-doctoral Researcher in economics",
+        fr : "Chercheure post-doctorante en économie" 
     },
     parcours : {
         en : "Career path",
